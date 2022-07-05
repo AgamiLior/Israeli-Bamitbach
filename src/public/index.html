@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Israeli Bamitbach</title>
+        <!-- Favicon-->
+        <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> -->
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .checked {
+                color: orange
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div  class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li style="background-color: black; opacity: 0.5; text-align: center; border-radius: 30px;" class="nav-item"><a class="nav-link" href="#portfolio">About Us</a></li>
+                        <li style="background-color: black; opacity: 0.5; text-align: center; border-radius: 30px;" class="nav-item"><a class="nav-link" href="#contact">SignUp/ LogIn</a></li>
+                        <li  style="background-color: black; opacity: 0.5; text-align: center; border-radius: 30px;" class="nav-item"><a class="nav-link" href="#team">Reviews</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading"><b>Israeli Bamitbach</b></div>
+                <div class="masthead-heading text-uppercase">טעם ישראלי במטבח אמריקאי</div>
+                <a class="btn btn-success btn-xl text-uppercase" href="#contact">Book Your Class Today!</a>
+            </div>
+        </header>
+
+        <!-- About Us-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About Us</h2>
+                    <h3 class="section-subheading text-muted">Israeli passionate pasta chef</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div  class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img  class="img-fluid" src="assets/img/portfolio/2.jpeg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Our Pasta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/sauce.jpeg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Our Sauces</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/3.jpeg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Extra</div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Contact-->
+<section class="page-section" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">SignUp / LogIn</h2>
+            <div class="portfolio-item">
+                <a class="portfolio-link" data-bs-toggle="modal" href="#signup">
+                    <div class="portfolio-hover">
+                    </div>
+                    <button type="button" class="btn btn-info">Sign Up</button>
+                </a>
+            </div>
+            <br>
+
+            <h3 class="section-subheading text-muted">For new users click the sign up button</h3>
+        </div>
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN" 
+        action="/users/login" method="POST">
+            <div class="row align-items-stretch mb-5">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <!-- Email Adress Input-->
+                        <input class="form-control" id="phone" type="text" placeholder="Enter Your Email *" name="email"/>
+                    </div>
+                    <div class="form-group">
+                        <!-- Password input-->
+                        <input class="form-control" id="password" type="password" placeholder="Enter Your Password *" name="password"/>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center"><button class="btn btn-success btn-xl text-uppercase " id="submitButton" type="submit" >Log In</button></div>
+        </form>
+        <br>
+        <a class="portfolio-link" data-bs-toggle="modal" href="#forgotPassword">
+            <div class="portfolio-hover">
+            </div>
+            <div class="text-center"><button type="button" class="btn btn-outline-primary">Forgot Password?</button></div>
+        </a>
+        
+
+    </div>
+</section>
+
+        <!-- Reviews -->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Reviews</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <h4>Devorah Mansdorf</h4>
+                            <p class="text-muted">This pasta class was amazing!!! Not only was the pasta out of this world amazing the whole experience was so enjoyable and well done. I recommend this to all my friends as a perfect anniversary or birthday gift!</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <h4>Ashley Small</h4>
+                            <p class="text-muted">This pasta class is everything you want from a class. Lior the instructor is patient, understanding, warm, and has great technique. He taught us how to make beautiful and delicious pasta! I highly recommend this for date night, anniversary gift, birthday gift, girls night out, bridal shower event, basically for all ocassions.</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <h4>Shahar Katz</h4>
+                            <p class="text-muted">Got this idea from a friend of mine and It was worth every penny! <br>
+                                Best Idea for a couple's date / anniversary!</p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Lior Agami</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a href="https://www.instagram.com/israelibamitbach/" aria-label="Instagram"><i style="color: rgb(246, 69, 175); margin-right: 25px;" class="fab fa-instagram fa-3x"></i></a>
+                        <a href="https://wa.me/19292845515" aria-label="Whatsapp"><i style="color: rgb(10, 220, 10);" class="fab fa-whatsapp fa-3x"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Our Pasta</h2>
+                                    <p class="item-intro text-muted">” You can buy a good pasta but when you cook it yourself it has another feeling. ” <br> Agnes Varda.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpeg" alt="..." />
+                                    <p>Our pasta is based on 3 ingredients</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Time:</strong>
+                                            20 minutes
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Our Sauce</h2>
+                                    <p class="item-intro text-muted">“ Life is a combination of magic and pasta. ” <br> Federico Fellini </p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sauce.jpeg" alt="..." />
+                                    <p>Our sauces bring a little flavor and a lot of magic!</p>
+                                    <ul class="list-inline">
+                                        <li class="rose">
+                                            <strong>Vodka Rose</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Alfredo</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Aglio e Olio</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Extra</h2>
+                                    <p class="item-intro text-muted">Have a taste from our classes </p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpeg" alt="..." />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Signup-->
+        <div class="portfolio-modal modal fade" id="signup" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Sign Up Form</h2>
+                                    <p class="item-intro text-muted">Have a taste from our classes </p>
+                                          <div class="row d-flex justify-content-center align-items-center h-100">
+                                            <div class="col-lg-12 col-xl-11">
+                                              <div class="card text-black" style="border-radius: 25px;">
+                                                    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                                                    <br>
+                                                      <form class="mx-1 mx-md-4" action="/users/signup" method="POST" name="form1">
+                                                        <div class="d-flex flex-row align-items-center mb-4">
+                                                          <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                                          <div class="form-outline flex-fill mb-">
+                                                            <input name="name" type="text" id="form3Example1c" class="form-control" placeholder="Full Name" required>
+                                                          </div>
+                                                        </div>
+                                                        <div class="d-flex flex-row align-items-center mb-4">
+                                                          <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                                                          <div class="form-outline flex-fill mb-0">
+                                                            <input name="email" type="email" id="form3Example3c" class="form-control" placeholder="Email" required/>
+                                                          </div>
+                                                        </div>
+                                                        <div class="d-flex flex-row align-items-center mb-4">
+                                                          <i class="fas fa-phone fa-lg me-3 fa-fw"></i>
+                                                          <div class="form-outline flex-fill mb-0">
+                                                            <input name="phone" type="phone" id="form3Example3c" class="form-control" placeholder="Phone Number" required/>
+                                                          </div>
+                                                        </div>
+                                                        <div class="d-flex flex-row align-items-center mb-4">
+                                                          <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                                          <div class="form-outline flex-fill mb-0">
+                                                            <input name="password" type="password" id="form3Example4c" class="form-control" placeholder="Password" required/>
+                                                          </div>
+                                                        </div>
+                                                        <div class="d-flex flex-row align-items-center mb-4">
+                                                          <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                                                          <div class="form-outline flex-fill mb-0">
+                                                            <input name="password_confirm" type="password" id="form3Example4cd" class="form-control" placeholder="Repeat Password" required/>
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-check d-flex justify-content-center mb-5">
+                                                          <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" required/>
+                                                          <label class="form-check-label" for="form2Example3">
+                                                            I agree all statements in <a href="#!">Terms of service</a>
+                                                          </label>
+                                                        </div>
+                                                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                                          <button type="submit" class="btn btn-primary btn-lg")">Register</button>
+                                                        </div>
+                                                      </form>
+                                      
+                                                    </div>
+                                                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Forgot Password-->
+         <div class="portfolio-modal modal fade" id="forgotPassword" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Forgot Your Password?</h2>
+                                    <p class="item-intro text-muted">Don't you worry, just submit your email and we will send you your password back</p>
+                                          <div class="row d-flex justify-content-center align-items-center h-100">
+                                            <div class="col-lg-12 col-xl-11">
+                                              <div class="card text-black" style="border-radius: 25px;">
+                                                    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                                                    <br>
+                                                      <form class="mx-1 mx-md-4" action="/users/forgotPassword" method="POST" name="form2">
+                                                          
+                                                        <div class="d-flex flex-row align-items-center mb-4">
+                                                          <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                                          <div class="form-outline flex-fill mb-">
+                                                            <input name="email" type="email" id="form3Example1c" class="form-control" placeholder="Email" required>
+                                                          </div>
+                                                        </div>
+                                                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                                            <div class="text-center"><button type="submit" class="btn btn-primary btn-lg")">Submit</button></div>
+                                                        </div>
+                                                      </form>
+                                      
+                                                    </div>
+                                                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- <script>
+        document.getElementById("myButton").onclick = function () {
+        location.href = "http://localhost:3000";
+        };
+
+        // function CheckPassword(inputtxt) 
+		// 	{ 
+		// 	var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+		// 	if(inputtxt.value.match(passw)) 
+		// 	{ 
+		// 	return true;
+		// 	}
+		// 	else if (inputtxt.value.length < 6 || inputtxt.value.length > 20){
+		// 		alert('Must be bewteen 6 to 20 characters')
+		// 	}else 
+		// 	{ 
+		// 	alert('Must contain at least one numeric digit, one uppercase and one lowercase letter')
+		// 	event.preventDefault()
+		// 	return false;
+		// 	}
+		// 	}
+        </script> -->
+    </body>
+</html>

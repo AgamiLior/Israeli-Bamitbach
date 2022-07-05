@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title><%= username %>'s Profile Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="../css/adminBasestyles.css" rel="stylesheet" />
+        <link href="../css/userPicsstyles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/slides.css">
+        <link rel="stylesheet" href="../index.css">
+        <link rel="stylesheet" href="../css/stars.css">
+        <link rel="stylesheet" href="../css/userPageStyles.css">
+        <link href="../css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-10 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                    
+
+                            <a class="portfolio-link nav-link collapsed" data-bs-toggle="modal" href="#classForm">
+                                <div class="portfolio-hover sb-nav-link-icon"><i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <div class="text-center">Book a Class</div>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+
+                            <a class="portfolio-link nav-link collapsed" data-bs-toggle="modal" href="#reviewForm">
+                                <div class="portfolio-hover sb-nav-link-icon"><i class="fas fa-book-open"></i>
+                                </div>
+                                <div class="text-center">Leave Review</div>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+
+                            <a class="portfolio-link nav-link collapsed" data-bs-toggle="modal" href="#uploadPicForm">
+                                <div class="portfolio-hover sb-nav-link-icon"><i class="fa-solid fa-image"></i>
+                                </div>
+                                <div class="text-center">Upload Pictures</div>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            
+                        </div>
+                    </div>
+ 
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 id="username" class="mt-4">Welcome <%= username %> ! </h1>
+                        <h2 id="alerting"></h2>
+                        <div class="general-images-slides">
+                            <div class="content">
+                                <div class="images-slides">
+                                    <img src="../assets/img/portfolio/1.jpeg" alt="" id="img">
+                                    <img src="../assets/img/portfolio/2.jpeg" alt="" id="img">
+                                    <img src="../assets/img/portfolio/3.jpeg" alt="" id="img">
+                                    <img src="../assets/img/portfolio/4.jpeg" alt="" id="img">
+                                    <img src="../assets/img/portfolio/5.jpeg" alt="" id="img">
+                                    <img src="../assets/img/portfolio/6.jpeg" alt="" id="img">
+                                    <img src="../assets/img/portfolio/7.jpeg" alt="" id="img">
+                                    <div style="margin: 100px; color: black;">
+                                      <a id="somethingnew" class="portfolio-link nav-link collapsed" href="#uploadPicForm" data-bs-toggle="modal" >Upload your photos here!</a>
+                                      </div>
+                                </div>
+                                <div onclick="side_slide(-1)" class="slide left">
+                                    <span class="fa fa-angle-left"></span>
+                                </div>
+                                <div onclick="side_slide(+1)" class="slide right">
+                                    <span class="fa fa-angle-right"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                
+            </div>
+        </div>
+
+         <!-- Class Form-->
+         
+         <div class="portfolio-modal modal fade" id="classForm" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal">x</div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2>Book Your Class</h2>
+                                    <p class="item-intro text-muted">And Hurry Up!</p>
+                                          <div class="row d-flex  align-items-center h-100">
+                                            <div class="col-lg-12 col-xl-11 ">
+                                              <div class="card align-items-left" style="border-radius: 25px;">
+                                                    <br>
+                                                      <form class="mx-1 mx-md-4" action="/users/class" method="POST" name="form2">                                                          
+                                                            <div style="text-align: left;">
+                                                            <label for="pasta">Choose Your Pasta</label>
+                                                            <select name="pasta" id="pasta" required>
+                                                              <option value="Fetuchini">Fetuchini</option>
+                                                              <option value="Spagethi">Spagethi</option>
+                                                              <option value="Ravioli">Ravioli</option>
+                                                            </select><br>
+                                                            </div>
+                                                            <div style="text-align: left;">
+                                                              <label for="sauce">Choose Your Sauce</label>
+                                                            <select name="sauce" id="sauce" required>
+                                                              <option value="Alfredo">Alfredo</option>
+                                                              <option value="Marinara">Marinara</option>
+                                                              <option value="Vodka Rose">Vodka Rose</option>
+                                                              <option value="Aglio e Olio">Aglio e Olio</option>
+                                                            </select><br>
+                                                          </div>
+                                                          <div style="text-align: left;">
+                                                            <label for="party">How Many People?</label>
+                                                            <select name="party" id="party" required>
+                                                              <option value="2">2</option>
+                                                              <option value="3">3</option>
+                                                              <option value="4">4</option>
+                                                              <option value="other">Other</option>
+                                                            </select><br>
+                                                            </div>
+                                                            <div class="tools">What tools required?
+                                                              <span class="toolstext"> 2 X Pots, <br> 2 X Pans<br> 2 Big Spoons,<br> 1 X Strainer,<br> Plates, Utensil</span>
+                                                            </div>
+                                                            <div style="text-align: left;">
+                                                            <label for="tools">Do You Have Tools?</label>
+                                                            <select name="tools" id="tools" required>
+                                                              <option value="True">Yes</option>
+                                                              <option value="False">No</option>
+                                                            </select><br>
+                                                            </div>
+                                                            <div style="text-align: left;">
+                                                            <label for="date">Date:</label>
+                                                            <input name="date" type="date" id="date" class="form-control" placeholder="Email" required style="padding: 10px; margin: 10px;">
+                                                            </div>
+                                                            <div style="text-align: left; margin-bottom: 10px;">
+                                                            <label for="start_time">Start Time -></label>
+                                                            <input type="time" id="start_time" name="start_time" value="16:59" min="17:00" max="20:00" required onchange="(
+                                                              function(evt){
+                                                                let stime = document.querySelector('#start_time').value;
+                                                                let arr = stime.split(':')
+                                                                let hour = parseInt(arr[0]);
+                                                                let min = arr[1];
+                                                                let new_time = `${hour+2}:${min}`
+                                                                console.log('new_time', new_time);
+                                                                document.querySelector('#end_time').value = new_time})()">
+                                                            <span class="validity"></span><br>
+                                                            </div>
+                                                            <div style="text-align: left;">
+                                                            <label for="end_time">End Time -></label>
+                                                            <input type="time" id="end_time" name="end_time" readonly required >
+                                                            <p class="item-intro text-muted">Classes only available between 5pm to 8pm</p> 
+                                                            </div>
+                                                            <div style="text-align: left;">
+                                                            <label for="location">Your Location</label>
+                                                            <input name="location" type="text" id="form3Example1c" class="form-control" placeholder="e.g 349 West End, NY" required>
+                                                            </div>
+                                                            <div style="text-align: left;">
+                                                            <label for="more_info">Additional Information</label>
+                                                            <textarea name="more_info" id="" style="width: 100%;" maxlength="200" placeholder="Maximum 200 characters"></textarea><p class="item-intro text-muted">Any important information we should know such as allergies/ special requests</p>                 
+                                                            </div>                                         </div>
+                                                        </div>
+                                                        
+                                                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                                            <div class="text-center"><button type="submit" class="btn btn-primary btn-lg" id="classbutton" onclick="event">Submit</button></div>
+                                                        </div>
+                                                      </form>
+                                      
+                                                    </div>
+                                                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review Form-->
+        <div class="portfolio-modal modal fade" id="reviewForm" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="close-modal" data-bs-dismiss="modal">x</div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 >We Value Your Opinion</h2>
+                                    <p class="item-intro text-muted">Please help us improve!</p>
+                                          <div class="row d-flex justify-content-center align-items-center h-100">
+                                            <div class="col-lg-12 col-xl-11">
+                                              <div class="card text-black" style="border-radius: 25px;">
+                                                    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                                                    <br>
+                                                      <form class="mx-1 mx-md-4" action="/users/review" method="POST" name="form2">
+                                                          
+                                                        <div class="d-flex flex-row align-items-center mb-4">
+                                                          <div class="form-outline flex-fill mb-">
+                                                              <textarea name="review" id="review" maxlength="200" placeholder="Write Your Review Here *" required></textarea><p class="item-intro text-muted">Maximum 200 characters</p>
+                                                                <div class="rate" name="stars" style="padding-left: 20px;">
+                                                                    <input type="radio" id="star5" name="rate" value="5"/>
+                                                                    <label for="star5" title="text">5 stars</label>
+                                                                    <input type="radio" id="star4" name="rate" value="4" />
+                                                                    <label for="star4" title="text">4 stars</label>
+                                                                    <input type="radio" id="star3" name="rate" value="3" />
+                                                                    <label for="star3" title="text">3 stars</label>
+                                                                    <input type="radio" id="star2" name="rate" value="2" />
+                                                                    <label for="star2" title="text">2 stars</label>
+                                                                    <input type="radio" id="star1" name="rate" value="1" />
+                                                                    <label for="star1" title="text">1 star</label>
+                                                                  </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                                            <div class="text-center"><button type="submit" class="btn btn-primary btn-lg" id="hellobutton">Submit</button></div>
+                                                        </div>
+                                                      </form>
+                                      
+                                                    </div>
+                                                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div>
+            </div>
+        </div> -->
+       
+
+        <!-- Upload Picture Form-->
+        <div class="portfolio-modal modal fade" id="uploadPicForm" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="close-modal" data-bs-dismiss="modal">x</div>
+                  <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2>Upload Your Pictures To Our Website!</h2>
+                                    <p class="item-intro text-muted">Please use a URL for that</p>
+                                          <div class="row d-flex justify-content-center align-items-center h-100">
+                                            <div class="col-lg-12 col-xl-11">
+                                                    <br>
+                                                      <form class="mx-1 mx-md-4" action="/users/uploadpicture" method="POST" name="form2">
+                                                          
+                                                        <div class="d-flex flex-row align-items-center mb-4">
+                                                          <i class="fas fa-link fa-lg me-3 fa-fw"></i>
+                                                          <div class="form-outline flex-fill mb-">
+                                                            <input name="url" type="url" id="form3Example1c" width="90%" class="form-control" placeholder="Place your link here" required>
+                                                          </div>
+                                                        </div>
+                                                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                                            <div class="text-center"><button type="submit" class="btn btn-primary btn-lg" id="imagebutton">Submit</button></div>
+                                                        </div>
+                                                      </form>
+                                      
+                                                    </div>
+                                                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                </div>
+  
+          <script>
+          function hello(e) {
+          alert('Thanks for your review!')
+          // let el = document.getElementById('alerting');
+          // el.innerHTML= 'Thanks for your review!'
+          // e.preventDefault()
+          }
+          document.getElementById("hellobutton").addEventListener("click", hello);
+          // function classs(e) {
+          // // alert('hello')
+          // // let el = document.getElementById('alerting');
+          // // e.preventDefault()          
+          // } 
+          // document.getElementById("classbutton").addEventListener("click", classs);
+          function uploadImage(e) {
+          let el = document.getElementById('alerting');
+          el.innerHTML= 'Your Picture has been uploaded and will be shown soon!'
+          e.preventDefault()
+          }
+          document.getElementById("imagebutton").addEventListener("click", uploadImage);
+          </script>
+        <script src="../js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="../js/userPicsscripts.js"></script>
+        <script src="../js/userPageScripts.js"></script>
+        <script src="../js/slides.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+
+          
+
+    </body>
+</html>
